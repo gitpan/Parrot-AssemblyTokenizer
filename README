@@ -1,0 +1,35 @@
+NAME
+    Parrot::AssemblyTokenizer
+
+DESCRIPTION
+    Tokenizes Parrot Assembly Language
+
+SYNOPSIS
+            use Parrot::AssemblyTokenizer;
+        
+            my @tokens = Parrot::AssemblyTokenizer::tokenize( $lines_of_pasm );
+        
+METHODS
+  tokenize
+
+    Tokenizes a scalar containing PASM ... scalar can be multiline, and
+    it'll do *The Right Thing*. Returns a list of array references, that
+    contain the token type and the token data. Tokens can be: whitespace,
+    comment, label, operation, argument, comma, single_quoted_string,
+    double_quoted_string.
+
+BUGS AND LIMITATIONS
+    This is not a parser. This was written as a helper module to allow me to
+    do syntax highlighting of PASM - note its lack of caring about what type
+    an argument is. No known bugs.
+
+AUTHOR
+    Peter Sergeant - pete@clueball.com
+
+LICENSE / COPYRIGHT
+    Copyright 2002 Peter Sergeant.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+

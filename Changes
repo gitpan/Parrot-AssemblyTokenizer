@@ -1,0 +1,6 @@
+Revision history for Perl extension Parrot::AssemblyTokenizer.
+
+0.01  Wed Oct  9 22:39:23 2002
+	- original version; created by h2xs 1.2 with options
+		-n Parrot::AssemblyTokenizer
+
